@@ -143,7 +143,7 @@ const newDiv = document.createElement('div');
 newDiv.className = 'hello';
 
 // add id
-// newDiv.id = 'hello1';
+newDiv.id = 'hello1';
 
 // add attribute
 newDiv.setAttribute('title', 'hello div');
