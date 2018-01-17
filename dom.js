@@ -137,32 +137,132 @@
 // createElement
 
 // create a div
-const newDiv = document.createElement('div');
+// const newDiv = document.createElement('div');
 
 // add class
-newDiv.className = 'hello';
+// newDiv.className = 'hello';
 
 // add id
-newDiv.id = 'hello1';
+// newDiv.id = 'hello1';
 
 // add attribute
-newDiv.setAttribute('title', 'hello div');
+// newDiv.setAttribute('title', 'hello div');
 
 // create textNode
-const newDivText = document.createTextNode('hello world');
+// const newDivText = document.createTextNode('hello world');
 
 // add text to div
-newDiv.appendChild(newDivText);
+// newDiv.appendChild(newDivText);
 
 // insert div to the DOM
-const container = document.querySelector('header .container');
-const h1 = document.querySelector('header h1');  
+// const container = document.querySelector('header .container');
+// const h1 = document.querySelector('header h1');  
 // h1 is grandchild of header
 
 // insert created div before h1 in container
-container.insertBefore(newDiv, h1);
+// container.insertBefore(newDiv, h1);
 
-newDiv.style.color = '#636363';
+// newDiv.style.color = '#636363';
+
+
+
+// EVENTS //
+
+// const button = document.getElementById('button');
+// button.addEventListener('click', buttonClick);
+
+// function buttonClick(e){
+    // console.log(button);
+    // console.log('button clicked');
+    // document.getElementById('header-title').textContent = 'Changed';
+    // document.querySelector('#main').style.backgroundColor = '#f4f4f4';
+    // console.log(e);
+
+    // console.log(e.target);
+    // console.log(e.target.id);
+    // console.log(e.target.className);
+    // console.log(e.target.classList);
+
+    // const output = document.getElementById('output');
+    // output.innerHTML = '<h3>' + e.target.id + '</h3>';
+    
+    // console.log(e.type);
+
+    // From browser
+    // console.log(e.clientX);
+    // console.log(e.clientY);
+
+    // from the item
+    // console.log(e.offsetX);
+    // console.log(e.offsetY);
+
+    // console.log(e.altKey);
+    // console.log(e.ctrlKey); // dosen't work on mac
+    // console.log(e.shiftKey);
+
+
+// }
+
+// const button = document.getElementById('button');
+// button.addEventListener('click', runEvent);
+// button.addEventListener('dblclick', runEvent);
+// button.addEventListener('mousedown', runEvent);
+// button.addEventListener('mouseup', runEvent);
+
+// const box = document.getElementById('box');
+// box.addEventListener('mouseenter', runEvent); //only for the element itself
+// box.addEventListener('mouseleave', runEvent); //only for the element itself
+
+// box.addEventListener('mouseover', runEvent);  //for any of the inner elements too
+// box.addEventListener('mouseout', runEvent);  //for any of the inner elements too
+// box.addEventListener('mousemove', runEvent);  //for any of the inner elements too
+
+// const itemInput = document.querySelector('input[type="text"]');
+// const form = document.querySelector('form');
+// const select = document.querySelector('select');
+
+// itemInput.addEventListener('keydown', runEvent);
+// itemInput.addEventListener('keyup', runEvent);
+// itemInput.addEventListener('keypress', runEvent);
+
+// itemInput.addEventListener('focus', runEvent);
+// itemInput.addEventListener('blur', runEvent); //opposite of focus
+
+// itemInput.addEventListener('cut', runEvent); 
+// itemInput.addEventListener('paste', runEvent);
+
+// itemInput.addEventListener('input', runEvent); //everything you do to the input
+
+
+// select.addEventListener('change', runEvent);
+
+// form.addEventListener('submit', runEvent);
+
+// function runEvent(e) {
+//     e.preventDefault();
+//     console.log('EVENT TYPE: ' + e.type);
+
+    // console.log(e.target.value);
+    // output.innerHTML = '<h3>' + e.target.value + '</h3>';
+
+    // it works even no definition of output exist because it's an id
+    // output.innerHTML = '<h3>MouseX: ' + e.offsetX + '</h3><h3>MouseY: ' + e.offsetY + '</h3>';
+
+    // document.body.style.backgroundColor = 'rgb(' + e.offsetX + ', ' + e.offsetY + ', 40)';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
